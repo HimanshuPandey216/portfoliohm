@@ -1,0 +1,390 @@
+<!DOCTYPE html>
+<html lang="en" data-theme="dark">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Himanshu Pandey | Data Scientist, MLOps Engineer & GenAI Specialist</title>
+  <meta name="description" content="Portfolio & Resume of Himanshu Pandey - Data Scientist and MLOps Engineer specializing in GenAI, Agentic RAG multi-agent pipelines, LLM fine-tuning, and scalable cloud ML pipelines at IIT Madras.">
+  <meta name="keywords" content="Himanshu Pandey, IIT Madras, MLOps Engineer, Data Scientist, Resume, GenAI, Agentic RAG, LangGraph, LangChain, Python, AWS, Docker, MLflow">
+  <meta name="author" content="Himanshu Pandey">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <!-- Font Awesome Icons -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
+
+  <!-- Custom Design System Stylesheet -->
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+  <!-- Interactive Background Canvas -->
+  <canvas id="particle-canvas"></canvas>
+
+  <!-- Sticky Glassmorphism Header -->
+  <header class="navbar" id="navbar">
+    <div class="container nav-container">
+      <a href="#hero" class="nav-logo">
+        <div class="logo-badge">HP</div>
+        <span>Himanshu<span class="gradient-text">.ai</span></span>
+      </a>
+
+      <nav>
+        <ul class="nav-menu" id="nav-menu">
+          <li><a href="#about" class="nav-link">About</a></li>
+          <li><a href="#skills" class="nav-link">Skills</a></li>
+          <li><a href="#projects" class="nav-link">Projects</a></li>
+          <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#certifications" class="nav-link">Honors</a></li>
+          <li><a href="#resume-section" class="nav-link">Resume</a></li>
+          <li><a href="#contact" class="nav-link">Contact</a></li>
+        </ul>
+      </nav>
+
+      <div class="nav-actions">
+        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
+          <i class="fa-solid fa-sun"></i>
+        </button>
+        <a href="assets/resume.html" target="_blank" class="btn btn-secondary" style="padding: 0.55rem 1.1rem; font-size: 0.85rem; border-color: var(--accent-cyan); color: var(--accent-cyan);">
+          <i class="fa-solid fa-file-pdf"></i> Resume
+        </a>
+        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
+          <i class="fa-solid fa-paper-plane"></i> Get in Touch
+        </a>
+        <div class="hamburger" id="hamburger" aria-label="Open mobile menu">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+      </div>
+    </div>
+  </header>
+
+  <main>
+    <!-- HERO SECTION -->
+    <section class="hero-section" id="hero">
+      <div class="container">
+        <div class="hero-grid">
+          <div class="hero-content">
+            <div class="hero-status-pill">
+              <span class="status-dot"></span> Available for MLOps & GenAI Roles
+            </div>
+            
+            <h1 class="hero-name">
+              Hi, I'm <span class="gradient-text" id="hero-name">Himanshu Pandey</span>
+            </h1>
+
+            <div class="hero-typing-container">
+              <span>I specialize in&nbsp;</span>
+              <span id="typed-text" class="typed-text"></span>
+              <span class="typed-cursor"></span>
+            </div>
+
+            <p class="hero-bio" id="hero-bio">
+              Data Scientist and MLOps Engineer pursuing Data Science at <strong>IIT Madras</strong>. Specializing in Agentic RAG multi-agent LLM systems, production MLOps automation, high-frequency financial data engineering, and cloud AI deployment.
+            </p>
+
+            <div class="hero-actions">
+              <a href="assets/resume.html" target="_blank" class="btn btn-primary" style="box-shadow: 0 4px 20px rgba(0, 242, 254, 0.4);">
+                <i class="fa-solid fa-file-pdf"></i> View Official Resume
+              </a>
+              <a href="#projects" class="btn btn-secondary">
+                <i class="fa-solid fa-code"></i> Explore Projects
+              </a>
+              <a href="https://github.com/HimanshuPandey216" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
+                <i class="fa-brands fa-github"></i> GitHub
+              </a>
+            </div>
+
+            <div class="social-links">
+              <a href="assets/resume.html" target="_blank" class="social-icon-btn" title="View Resume">
+                <i class="fa-solid fa-file-lines"></i>
+              </a>
+              <a href="mailto:himanshupandey2166@gmail.com" class="social-icon-btn" title="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+917652023417" class="social-icon-btn" title="Call Phone">
+                <i class="fa-solid fa-phone"></i>
+              </a>
+              <a href="https://github.com/HimanshuPandey216" target="_blank" class="social-icon-btn" title="GitHub">
+                <i class="fa-brands fa-github"></i>
+              </a>
+              <a href="https://linkedin.com/in/himanshu-pandey12" target="_blank" class="social-icon-btn" title="LinkedIn">
+                <i class="fa-brands fa-linkedin"></i>
+              </a>
+            </div>
+          </div>
+
+          <!-- Hero Avatar Visual Card -->
+          <div class="hero-avatar-wrapper">
+            <div class="avatar-glow"></div>
+            <div class="glass-card avatar-card">
+              <img src="assets/images/avatar.jpg" alt="Himanshu Pandey Developer Avatar" class="avatar-img">
+              <div class="avatar-floating-badge">
+                <div class="badge-icon">
+                  <i class="fa-solid fa-graduation-cap"></i>
+                </div>
+                <div class="badge-text">
+                  <strong>IIT Madras</strong>
+                  <span>BS Data Science '26</span>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Key Metrics Bar -->
+        <div class="stats-grid" id="stats-grid">
+          <!-- Rendered dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- ABOUT ME SECTION -->
+    <section id="about">
+      <div class="container">
+        <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
+        <h2 class="section-title">Architecting Production-Grade <span class="gradient-text">AI Systems</span></h2>
+        <p class="section-subtitle">Combining theoretical rigor from IIT Madras with real-world engineering at Shodhshala.</p>
+
+        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
+          <div class="glass-card" style="padding: 2rem;">
+            <div style="font-size: 2.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">
+              <i class="fa-solid fa-brain"></i>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem;">GenAI & Agentic AI</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              Expertise in multi-agent routing graphs with <strong>LangGraph</strong>, safety guardrails via <strong>NeMo</strong>, vector search on Qdrant, Model Context Protocol (MCP), and LoRA/QLoRA fine-tuning.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 2rem;">
+            <div style="font-size: 2.2rem; color: var(--accent-blue); margin-bottom: 1rem;">
+              <i class="fa-solid fa-server"></i>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem;">MLOps & Cloud Engineering</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              End-to-end experiment tracking with <strong>MLflow & DVC</strong>, containerization with Docker, Grafana/Prometheus data drift detection, and AWS EC2/S3/ECR deployments.
+            </p>
+          </div>
+
+          <div class="glass-card" style="padding: 2rem;">
+            <div style="font-size: 2.2rem; color: var(--accent-purple); margin-bottom: 1rem;">
+              <i class="fa-solid fa-database"></i>
+            </div>
+            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem;">Data Systems & Optimization</h3>
+            <p style="color: var(--text-secondary); font-size: 0.95rem;">
+              Optimizing PostgreSQL queries across <strong>1M+ financial data points</strong> (~30% query speedup), constructing Python ETL pipelines (~40% time savings), and algorithmic signal engineering.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- RECRUITER RESUME SECTION -->
+    <section id="resume-section">
+      <div class="container">
+        <div class="glass-card" style="padding: 3rem 2rem; text-align: center; position: relative; overflow: hidden;">
+          <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--gradient-primary); border-radius: 50%; opacity: 0.15; filter: blur(40px);"></div>
+
+          <span class="section-tag"><i class="fa-solid fa-id-card"></i> Recruiter Hub</span>
+          <h2 class="section-title" style="margin-top: 0.5rem;">View Official <span class="gradient-text">Resume</span></h2>
+          <p class="section-subtitle" style="margin: 0 auto 2rem auto;">
+            Looking for a Data Scientist, MLOps Engineer, or GenAI Specialist? You can view my complete formatted resume directly in your browser or save it as a PDF.
+          </p>
+
+          <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+            <a href="assets/resume.html" target="_blank" class="btn btn-primary">
+              <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Resume in New Tab
+            </a>
+            <button id="open-resume-modal-btn" class="btn btn-secondary">
+              <i class="fa-solid fa-eye"></i> Quick Preview Modal
+            </button>
+            <a href="assets/resume.html" onclick="setTimeout(() => window.print(), 500)" target="_blank" class="btn btn-secondary">
+              <i class="fa-solid fa-download"></i> Download / Print PDF
+            </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- TECHNICAL SKILLS SECTION -->
+    <section id="skills">
+      <div class="container">
+        <span class="section-tag"><i class="fa-solid fa-code"></i> Technical Matrix</span>
+        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
+        <p class="section-subtitle">Filter by domain or search for specific tools, libraries, and frameworks.</p>
+
+        <div class="skills-filter-container">
+          <div class="skills-tabs" id="skills-tabs">
+            <!-- Tabs rendered dynamically -->
+          </div>
+          <div class="skills-search-wrapper">
+            <i class="fa-solid fa-magnifying-glass skills-search-icon"></i>
+            <input type="text" id="skills-search" class="skills-search-input" placeholder="Search skill (e.g. LangGraph, AWS, Docker)...">
+          </div>
+        </div>
+
+        <div class="skills-grid" id="skills-grid">
+          <!-- Skills rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- FEATURED PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <span class="section-tag"><i class="fa-solid fa-cubes"></i> Portfolio Highlights</span>
+        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
+        <p class="section-subtitle">Real-world AI platforms, agentic LLM pipelines, and automated cloud workflows.</p>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Projects rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- WORK EXPERIENCE & EDUCATION SECTION -->
+    <section id="experience">
+      <div class="container">
+        <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience & Education</span>
+        <h2 class="section-title">Career <span class="gradient-text">Timeline</span></h2>
+        <p class="section-subtitle">My professional journey and academic foundation at IIT Madras.</p>
+
+        <div class="timeline-grid">
+          <div>
+            <h3 class="timeline-column-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
+            <div class="timeline-items" id="experience-timeline">
+              <!-- Experience timeline rendered dynamically -->
+            </div>
+          </div>
+
+          <div>
+            <h3 class="timeline-column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Foundation</h3>
+            <div class="timeline-items" id="education-timeline">
+              <!-- Education timeline rendered dynamically -->
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- CERTIFICATIONS & HONORS SECTION -->
+    <section id="certifications">
+      <div class="container">
+        <span class="section-tag"><i class="fa-solid fa-award"></i> Recognition & Credentials</span>
+        <h2 class="section-title">Certifications & <span class="gradient-text">Honors</span></h2>
+        <p class="section-subtitle">Recognized for academic excellence and specialized technical certifications.</p>
+
+        <div class="certs-grid" id="certs-grid">
+          <!-- Certifications rendered dynamically -->
+        </div>
+      </div>
+    </section>
+
+    <!-- CONTACT SECTION -->
+    <section id="contact">
+      <div class="container">
+        <span class="section-tag"><i class="fa-solid fa-comments"></i> Get In Touch</span>
+        <h2 class="section-title">Let's Build <span class="gradient-text">Together</span></h2>
+        <p class="section-subtitle">Interested in collaborating on AI research, MLOps engineering, or GenAI projects? Send a message!</p>
+
+        <div class="contact-grid">
+          <div class="contact-info-cards">
+            <div class="glass-card contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-envelope"></i>
+              </div>
+              <div class="contact-info-text" style="flex-grow: 1;">
+                <label>Direct Email</label>
+                <p>himanshupandey2166@gmail.com</p>
+              </div>
+              <button class="btn btn-secondary" id="copy-email-btn" style="padding: 0.5rem 0.85rem; font-size: 0.8rem;" title="Copy email">
+                <i class="fa-regular fa-copy"></i> Copy
+              </button>
+            </div>
+
+            <div class="glass-card contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-phone"></i>
+              </div>
+              <div class="contact-info-text">
+                <label>Phone / WhatsApp</label>
+                <p>+91-7652023417</p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-solid fa-location-dot"></i>
+              </div>
+              <div class="contact-info-text">
+                <label>Current Status</label>
+                <p>IIT Madras / Remote & On-site</p>
+              </div>
+            </div>
+
+            <div class="glass-card contact-info-card">
+              <div class="contact-info-icon">
+                <i class="fa-brands fa-github"></i>
+              </div>
+              <div class="contact-info-text">
+                <label>GitHub</label>
+                <p><a href="https://github.com/HimanshuPandey216" target="_blank" style="color: var(--accent-cyan);">github.com/HimanshuPandey216</a></p>
+              </div>
+            </div>
+          </div>
+
+          <div class="glass-card contact-form-card">
+            <form id="contact-form">
+              <div class="form-group">
+                <label for="form-name" class="form-label">Your Name</label>
+                <input type="text" id="form-name" class="form-input" placeholder="e.g. Alex Morgan" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-email" class="form-label">Email Address</label>
+                <input type="email" id="form-email" class="form-input" placeholder="e.g. alex@company.com" required>
+              </div>
+
+              <div class="form-group">
+                <label for="form-message" class="form-label">Project / Inquiry Message</label>
+                <textarea id="form-message" class="form-input" placeholder="Tell me about your AI project, MLOps needs, or opportunity..." required></textarea>
+              </div>
+
+              <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
+                <i class="fa-solid fa-paper-plane"></i> Send Direct Message
+              </button>
+            </form>
+          </div>
+        </div>
+      </div>
+    </section>
+  </main>
+
+  <footer class="footer">
+    <div class="container footer-content">
+      <div class="footer-copyright">
+        © 2026 <strong>Himanshu Pandey</strong>. Crafted with precision & AI passion.
+      </div>
+      <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+        <i class="fa-solid fa-arrow-up"></i>
+      </a>
+    </div>
+  </footer>
+
+  <!-- Project Detail & Resume Modal Overlay -->
+  <div class="modal-overlay" id="project-modal">
+    <div class="glass-card modal-container">
+      <!-- Content populated dynamically by script.js -->
+    </div>
+  </div>
+
+  <!-- Load Data Configuration & Script Logic -->
+  <script src="config.js"></script>
+  <script src="script.js"></script>
+</body>
+</html>
