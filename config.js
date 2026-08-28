@@ -1,8 +1,9 @@
 const PORTFOLIO_DATA = {
   personal: {
     name: "Himanshu Pandey",
-    title: "Data Scientist & MLOps Engineer",
+    title: "Founder @ Decode AI | Data Scientist & MLOps Engineer",
     subtitles: [
+      "Founder @ Decode AI",
       "GenAI & Agentic AI Specialist",
       "MLOps & Pipeline Engineer",
       "Data Scientist @ IIT Madras",
@@ -12,7 +13,7 @@ const PORTFOLIO_DATA = {
     degree: "BS in Data Science and Applications",
     expectedGraduation: "Sept 2026",
     status: "Open to High-Impact Roles & AI Research",
-    statusBadge: "Available for MLOps & GenAI Roles",
+    statusBadge: "Founder @ Decode AI | Open for Roles",
     location: "India (Remote / On-site)",
     email: "himanshupandey2166@gmail.com",
     phone: "+91-7652023417",
@@ -21,12 +22,13 @@ const PORTFOLIO_DATA = {
     linkedin: "https://linkedin.com/in/himanshu-pandey12",
     linkedinUsername: "himanshu-pandey12",
     resumeUrl: "assets/resume.html",
-    bio: "Passionate Data Scientist and MLOps Engineer with expertise in building end-to-end production AI platforms, Agentic RAG multi-agent pipelines, automated CI/CD MLOps workflows, and high-frequency financial data engineering. Pursuing Data Science at IIT Madras with a strong focus on scalable AI systems, vector search, and model governance.",
+    decodeAiUrl: "https://decodeai-alpha.vercel.app/",
+    bio: "Passionate Data Scientist, MLOps Engineer, and Founder of Decode AI — an open community knowledge platform for Artificial Intelligence, Machine Learning, and Data Science. Pursuing Data Science at IIT Madras with expertise in Agentic RAG multi-agent pipelines, LLM fine-tuning, and scalable cloud ML systems.",
     stats: [
+      { label: "Decode AI Platform", value: "50+", suffix: "Resources" },
       { label: "Query Speedup", value: "~30%", suffix: "Faster" },
       { label: "ETL Optimization", value: "~40%", suffix: "Reduction" },
-      { label: "MLOps Release Cycle", value: "~50%", suffix: "Shorter" },
-      { label: "Trading Win Rate Boost", value: "~12%", suffix: "Improvement" }
+      { label: "MLOps Release Cycle", value: "~50%", suffix: "Shorter" }
     ]
   },
 
@@ -84,6 +86,23 @@ const PORTFOLIO_DATA = {
 
   projects: [
     {
+      id: "decode-ai",
+      title: "Decode AI — Open Knowledge Platform for AI & ML",
+      subtitle: "Community-driven knowledge platform for Artificial Intelligence, Machine Learning, Roadmaps, and Research.",
+      category: "EdTech & Open Source AI",
+      image: "assets/images/project_decodeai.jpg",
+      live: "https://decodeai-alpha.vercel.app/",
+      github: "https://github.com/HimanshuPandey216",
+      tech: ["HTML5", "CSS3 / Glassmorphism", "JavaScript (ES6+)", "Neural Canvas API", "Vercel", "Open Source"],
+      highlights: [
+        "Founded and architected Decode AI ('Learn AI. Build Future.'), a community-driven knowledge platform covering 16+ core AI/ML domains.",
+        "Featured interactive 23-phase AI Engineer Roadmap 2026, Machine Learning Engineer paths, and Generative AI specialist guides.",
+        "Curated 50+ handpicked study resources, simplified research paper breakdowns (Attention, LoRA, ResNet), and technical book summaries.",
+        "Integrated interactive neural canvas visualizer, quick command search (⌘K), dark/light theme engine, and open-source contribution workflows.",
+        "Built responsive, accessible glassmorphic design system deployed live at decodeai-alpha.vercel.app."
+      ]
+    },
+    {
       id: "agentic-rag",
       title: "Enterprise Agentic RAG — Multi-Agent LLM Pipeline",
       subtitle: "Production-grade multi-agent cyclic RAG system with safety guardrails and evaluation tracing.",
@@ -135,6 +154,18 @@ const PORTFOLIO_DATA = {
   ],
 
   experience: [
+    {
+      role: "Founder & Lead Architect",
+      company: "Decode AI",
+      location: "Remote / Open Source",
+      period: "2026 – Present",
+      type: "Founder",
+      details: [
+        "Founded Decode AI ('Learn AI. Build Future.'), a community-driven knowledge platform for Artificial Intelligence, Data Science, and Machine Learning.",
+        "Authored the 23-phase AI Engineer Roadmap 2026 guiding learners from Python fundamentals to production LLM agents and MLOps.",
+        "Curated 50+ study resources, simplified research paper breakdowns, technical book summaries, and built an open-source contribution workflow."
+      ]
+    },
     {
       role: "Data Science & MLOps Intern",
       company: "Shodhshala",

@@ -257,11 +257,16 @@ document.addEventListener('DOMContentLoaded', () => {
           </div>
           <div class="project-footer-actions">
             <button class="project-link-btn view-project-btn" data-id="${proj.id}">
-              <i class="fa-solid fa-layer-group"></i> Architecture Details
+              <i class="fa-solid fa-layer-group"></i> Details
             </button>
+            ${proj.live ? `
+              <a href="${proj.live}" target="_blank" rel="noopener noreferrer" class="project-link-btn" style="color: var(--accent-emerald);">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Live App
+              </a>
+            ` : ''}
             ${proj.github ? `
               <a href="${proj.github}" target="_blank" rel="noopener noreferrer" class="project-link-btn">
-                <i class="fa-brands fa-github"></i> Repository
+                <i class="fa-brands fa-github"></i> Repo
               </a>
             ` : ''}
           </div>
@@ -310,8 +315,13 @@ document.addEventListener('DOMContentLoaded', () => {
       </div>
 
       <div style="display: flex; gap: 1rem; flex-wrap: wrap;">
+        ${project.live ? `
+          <a href="${project.live}" target="_blank" class="btn btn-primary">
+            <i class="fa-solid fa-rocket"></i> Launch Live Application
+          </a>
+        ` : ''}
         ${project.github ? `
-          <a href="${project.github}" target="_blank" class="btn btn-primary">
+          <a href="${project.github}" target="_blank" class="btn btn-secondary">
             <i class="fa-brands fa-github"></i> View GitHub Repository
           </a>
         ` : ''}
