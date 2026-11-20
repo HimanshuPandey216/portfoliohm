@@ -3,88 +3,109 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Himanshu Pandey - Resume</title>
+  <title>Himanshu Pandey — Resume | AI Engineer & Data Science</title>
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&family=JetBrains+Mono:wght@400;500;600&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css">
   <style>
     :root {
-      --primary: #0f172a;
-      --accent: #0284c7;
-      --text: #334155;
-      --border: #e2e8f0;
+      --primary: #0b0d10;
+      --accent: #2563eb;
+      --text: #1f2937;
+      --text-muted: #4b5563;
+      --border: #e5e7eb;
+      --bg: #f3f4f6;
     }
     *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
     body {
-      font-family: 'Inter', sans-serif;
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
       color: var(--text);
       line-height: 1.5;
-      background: #f1f5f9;
+      background: var(--bg);
       padding: 2rem 1rem;
     }
     .page-actions {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto 1.5rem auto;
       display: flex;
       justify-content: space-between;
       align-items: center;
+      gap: 1rem;
     }
     .btn {
       display: inline-flex;
       align-items: center;
       gap: 0.5rem;
-      padding: 0.6rem 1.25rem;
-      background: #0284c7;
+      padding: 0.65rem 1.35rem;
+      background: #0b0d10;
       color: #ffffff;
       border-radius: 6px;
       text-decoration: none;
       font-weight: 600;
-      font-size: 0.9rem;
-      border: none;
+      font-size: 0.88rem;
+      border: 1px solid #1f2937;
       cursor: pointer;
+      transition: all 0.2s;
     }
-    .btn:hover { background: #0369a1; }
-    .btn-secondary { background: #64748b; }
-    .btn-secondary:hover { background: #475569; }
+    .btn:hover { background: #1f2937; }
+    .btn-secondary { background: #ffffff; color: #1f2937; border: 1px solid #d1d5db; }
+    .btn-secondary:hover { background: #f9fafb; border-color: #9ca3af; }
 
     .resume-container {
-      max-width: 850px;
+      max-width: 900px;
       margin: 0 auto;
       background: #ffffff;
-      padding: 3rem;
+      padding: 3.5rem;
       border-radius: 8px;
-      box-shadow: 0 10px 25px rgba(0,0,0,0.08);
+      box-shadow: 0 10px 30px rgba(0,0,0,0.06);
       border: 1px solid var(--border);
     }
     .header {
       text-align: center;
-      border-bottom: 2px solid var(--primary);
-      padding-bottom: 1rem;
+      border-bottom: 2px solid #111827;
+      padding-bottom: 1.25rem;
       margin-bottom: 1.5rem;
     }
     .name {
-      font-size: 2.2rem;
+      font-size: 2.3rem;
       font-weight: 800;
-      color: var(--primary);
+      color: #111827;
       letter-spacing: -0.5px;
+      text-transform: uppercase;
+    }
+    .tagline-sub {
+      font-size: 0.95rem;
+      font-weight: 600;
+      color: #4b5563;
+      margin-top: 0.25rem;
     }
     .contact-line {
       display: flex;
       justify-content: center;
       flex-wrap: wrap;
       gap: 1.25rem;
-      margin-top: 0.5rem;
-      font-size: 0.9rem;
-      color: #475569;
+      margin-top: 0.65rem;
+      font-size: 0.88rem;
+      color: #4b5563;
     }
-    .contact-line a { color: #0284c7; text-decoration: none; font-weight: 500; }
-    .contact-line a:hover { text-decoration: underline; }
+    .contact-line a { color: #111827; text-decoration: none; font-weight: 600; }
+    .contact-line a:hover { text-decoration: underline; color: #2563eb; }
+
+    .summary-box {
+      background: #f8fafc;
+      border-left: 3px solid #111827;
+      padding: 0.75rem 1rem;
+      font-size: 0.88rem;
+      color: #374151;
+      margin-bottom: 1.5rem;
+      line-height: 1.55;
+    }
 
     .section-title {
-      font-size: 1.1rem;
+      font-size: 1.05rem;
       font-weight: 800;
-      color: var(--primary);
+      color: #111827;
       text-transform: uppercase;
       letter-spacing: 0.5px;
       border-bottom: 1.5px solid #cbd5e1;
@@ -97,15 +118,15 @@
       justify-content: space-between;
       align-items: baseline;
       font-weight: 700;
-      color: var(--primary);
-      font-size: 0.98rem;
+      color: #111827;
+      font-size: 0.95rem;
     }
     .item-sub {
       display: flex;
       justify-content: space-between;
       font-style: italic;
-      color: #64748b;
-      font-size: 0.9rem;
+      color: #4b5563;
+      font-size: 0.88rem;
       margin-bottom: 0.4rem;
     }
     ul {
@@ -114,14 +135,16 @@
     }
     li {
       margin-bottom: 0.35rem;
-      font-size: 0.9rem;
-      color: #334155;
+      font-size: 0.88rem;
+      color: #374151;
+      line-height: 1.5;
     }
     .skills-row {
-      font-size: 0.9rem;
-      margin-bottom: 0.4rem;
+      font-size: 0.88rem;
+      margin-bottom: 0.45rem;
+      line-height: 1.55;
     }
-    .skills-row strong { color: var(--primary); }
+    .skills-row strong { color: #111827; }
 
     @media print {
       body { background: #fff; padding: 0; }
@@ -134,31 +157,54 @@
 
   <div class="page-actions">
     <a href="../index.html" class="btn btn-secondary"><i class="fa-solid fa-arrow-left"></i> Back to Portfolio</a>
-    <button onclick="window.print()" class="btn"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+    <div>
+      <a href="https://decodeai-alpha.vercel.app/" target="_blank" class="btn btn-secondary" style="margin-right: 0.5rem;">
+        <i class="fa-solid fa-brain"></i> Decode AI
+      </a>
+      <button onclick="window.print()" class="btn"><i class="fa-solid fa-print"></i> Print / Save as PDF</button>
+    </div>
   </div>
 
   <div class="resume-container">
     <header class="header">
       <h1 class="name">Himanshu Pandey</h1>
+      <div class="tagline-sub">AI Engineer • Data Science & MLOps • Founder @ Decode AI</div>
       <div class="contact-line">
         <span><i class="fa-solid fa-phone"></i> +91-7652023417</span>
         <a href="mailto:himanshupandey2166@gmail.com"><i class="fa-solid fa-envelope"></i> himanshupandey2166@gmail.com</a>
-        <a href="https://linkedin.com/in/himanshu-pandey12" target="_blank"><i class="fa-brands fa-linkedin"></i> himanshu-pandey12</a>
-        <a href="https://github.com/HimanshuPandey216" target="_blank"><i class="fa-brands fa-github"></i> HimanshuPandey216</a>
+        <a href="https://linkedin.com/in/himanshu-pandey12" target="_blank"><i class="fa-brands fa-linkedin"></i> linkedin.com/in/himanshu-pandey12</a>
+        <a href="https://github.com/HimanshuPandey216" target="_blank"><i class="fa-brands fa-github"></i> github.com/HimanshuPandey216</a>
       </div>
     </header>
+
+    <div class="summary-box">
+      <strong>Professional Summary:</strong> AI Engineer and Data Science undergraduate at IIT Madras, and Founder of Decode AI. Hands-on experience across Agentic AI systems, enterprise RAG pipelines, MLOps, SQL, Python, and large-scale data processing. Proven record in reducing query response times by ~30%, cutting ETL preprocessing by ~40%, engineering 30+ financial market signals, and deploying production machine learning platforms on cloud infrastructure.
+    </div>
 
     <section>
       <h2 class="section-title">Education</h2>
       <div class="item-header">
-        <span>Indian Institute of Technology (IIT) Madras, Chennai, India</span>
-        <span>Sept 2026</span>
+        <span>Indian Institute of Technology (IIT) Madras</span>
+        <span>Expected 2026 – 2027</span>
       </div>
       <div class="item-sub">
-        <span>BS in Data Science and Applications</span>
+        <span>BS in Data Science and Applications & Diploma in Programming & App Development</span>
+        <span>Chennai, India</span>
       </div>
-      <p style="font-size: 0.9rem; color: #475569;">
-        <strong>Diploma in Programming & App Dev</strong> — Coursework: Data Structures, DBMS, Algorithms, Statistics
+      <p style="font-size: 0.88rem; color: #4b5563; margin-bottom: 0.75rem;">
+        <strong>Relevant Coursework:</strong> Data Structures, Database Management Systems (DBMS), Algorithms, Statistics, Machine Learning, Python Application Development.
+      </p>
+
+      <div class="item-header">
+        <span>COLTE</span>
+        <span>December 2026</span>
+      </div>
+      <div class="item-sub">
+        <span>Supply Chain Associate Program</span>
+        <span>Chennai, India</span>
+      </div>
+      <p style="font-size: 0.88rem; color: #4b5563;">
+        <strong>Focus Areas:</strong> Supply Chain Management, Inventory Optimization, Logistics, Procurement Fundamentals, and Analytics.
       </p>
     </section>
 
@@ -166,79 +212,134 @@
       <h2 class="section-title">Work Experience</h2>
       <div class="item-header">
         <span>Shodhshala — Data Science & MLOps Intern</span>
-        <span>Jan. 2026 – June. 2026</span>
+        <span>Jan 2026 – June 2026</span>
       </div>
       <div class="item-sub">
         <span>Remote</span>
+        <span>Financial Data & MLOps</span>
       </div>
       <ul>
-        <li>Designed and maintained PostgreSQL databases (1M+ rows of high-frequency financial data) with advanced query optimization and indexing strategies, reducing average query response time by ~30%.</li>
-        <li>Built automated ETL pipelines in Python for ingesting and transforming large-scale trading datasets, cutting preprocessing time by ~40% and enabling real-time feature availability.</li>
-        <li>Architected and deployed an end-to-end MLOps pipeline — spanning data ingestion, feature engineering, model training, experiment tracking (MLflow), and data versioning (DVC + DagsHub) — containerized via Docker and deployed on AWS (EC2/S3), reducing model release cycles by ~50%.</li>
+        <li>Designed and maintained PostgreSQL databases containing 1M+ rows of high-frequency financial data; optimized query structures and indexing strategies, reducing average query response time by ~30%.</li>
+        <li>Built automated ETL pipelines in Python for ingesting, cleaning, and transforming large-scale trading datasets, cutting preprocessing time by ~40% and enabling real-time feature availability.</li>
+        <li>Architected and deployed an end-to-end MLOps pipeline spanning data ingestion, feature engineering, model training, MLflow tracking, and DVC + DagsHub data versioning — containerized via Docker and deployed on AWS (EC2/S3), reducing release cycles by ~50%.</li>
         <li>Configured Grafana + Prometheus monitoring dashboards for real-time model performance tracking, data drift detection, and automated alerting on latency and accuracy degradation in live trading strategies.</li>
-        <li>Engineered 30+ features from raw market data via modular Python scripts, improving model signal quality by ~15%; developed and backtested algorithmic trading strategies, improving average win rate by ~12%.</li>
+        <li>Engineered 30+ features from raw market data via modular Python scripts using Pandas and NumPy, improving model signal quality by ~15%; developed and backtested algorithmic trading strategies, improving average win rate by ~12%.</li>
+        <li>Maintained order-data pipelines handling 1,000+ orders/day across multiple broker APIs with validation checks, schema monitoring, and real-time failure alerts.</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 0.85rem;">
+        <span>Decode AI — Founder & Lead Architect</span>
+        <span>2026 – Present</span>
+      </div>
+      <div class="item-sub">
+        <span>Remote • Open Source</span>
+        <span>https://decodeai-alpha.vercel.app/</span>
+      </div>
+      <ul>
+        <li>Founded Decode AI ("Learn AI. Build Future."), a community-driven knowledge platform for AI, Machine Learning, Data Science, and modern technologies across 16+ core domains.</li>
+        <li>Authored the 23-phase interactive AI Engineer Roadmap 2026 guiding learners from Python to production LLM agents and MLOps deployment.</li>
+        <li>Curated 50+ study resources, simplified seminal research paper breakdowns (Attention, LoRA, ResNet), and technical book summaries.</li>
       </ul>
     </section>
 
     <section>
       <h2 class="section-title">Technical Projects</h2>
+
       <div class="item-header">
         <span>Enterprise Agentic RAG — Multi-Agent LLM Pipeline</span>
+        <span><a href="https://github.com/HimanshuPandey216/ragproject" target="_blank" style="color: #2563eb; text-decoration: none;">github.com/HimanshuPandey216/ragproject</a></span>
       </div>
       <div class="item-sub">
-        <span>Guide: github.com/HimanshuPandey216/ragproject | Tech: LangChain, LangGraph, Portkey, Qdrant, Gemini Embeddings, FlashRank, NeMo Guardrails, RAGAS</span>
+        <span>Tech: LangChain, LangGraph, Portkey, Qdrant, Gemini Embeddings, FlashRank, NeMo Guardrails, RAGAS, LangSmith</span>
       </div>
       <ul>
         <li>Built a production-grade agentic RAG system using LangChain/LangGraph for cyclic multi-step reasoning, conversational memory, and a Planner-Retriever-Responder node graph routing technical vs. conversational queries.</li>
-        <li>Implemented NeMo Guardrails for pre-retrieval input filtering (off-topic, jailbreak, injection) and a Portkey LLM gateway with primary/fallback failover across Groq (Llama 3.3 70B) keys; parsed PDF/HTML/DOCX/PPTX on-device with no external OCR.</li>
-        <li>Built retrieval layer on Qdrant Cloud vector search with 3072-dim Gemini embeddings & FlashRank local reranking; validated with a 6-metric RAGAS evaluation suite and full LangSmith/Logfire tracing.</li>
+        <li>Implemented NeMo Guardrails for pre-retrieval input filtering (off-topic, jailbreak, prompt injection) and a Portkey LLM gateway with primary/fallback failover across Groq (Llama 3.3 70B) keys; parsed PDF/HTML/DOCX/PPTX on-device with zero external OCR.</li>
+        <li>Built vector retrieval layer on Qdrant Cloud with 3072-dim Gemini embeddings and FlashRank local reranking; validated with a 6-metric RAGAS evaluation suite and full LangSmith/Logfire tracing.</li>
       </ul>
 
       <div class="item-header" style="margin-top: 0.75rem;">
         <span>Network Security — Phishing Detection MLOps Platform</span>
+        <span><a href="https://github.com/HimanshuPandey216/networksecurity" target="_blank" style="color: #2563eb; text-decoration: none;">github.com/HimanshuPandey216/networksecurity</a></span>
       </div>
       <div class="item-sub">
-        <span>Guide: github.com/HimanshuPandey216/networksecurity | Tech: Python, FastAPI, MLflow, Docker, MongoDB, AWS (S3, ECR, EC2)</span>
+        <span>Tech: Python, FastAPI, MLflow, Docker, MongoDB, AWS (EC2, S3, ECR), DagsHub, GitHub Actions</span>
       </div>
       <ul>
-        <li>Built an end-to-end MLOps platform to classify URLs as phishing or legitimate, with modular pipeline stages for data ingestion, schema validation/drift detection, feature transformation, and model training.</li>
-        <li>Benchmarked 5 classifiers (Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, AdaBoost) with MLflow/DagsHub experiment tracking; served via a FastAPI /train & /predict service backed by MongoDB Atlas.</li>
+        <li>Built an end-to-end MLOps platform to classify URLs as phishing or legitimate, with modular pipeline stages for data ingestion, schema validation, data drift detection, feature transformation, and model training.</li>
+        <li>Benchmarked 5 classifiers (Random Forest, Decision Tree, Gradient Boosting, Logistic Regression, AdaBoost) with MLflow/DagsHub tracking; served via a FastAPI /train & /predict service backed by MongoDB Atlas.</li>
         <li>Automated CI/CD with GitHub Actions to build and push Docker images to Amazon ECR, deploying via a self-hosted EC2 runner with artifacts synced to AWS S3.</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 0.75rem;">
+        <span>ContextGate — Governed Context Layer for AI Agents</span>
+        <span><a href="https://github.com/HimanshuPandey216" target="_blank" style="color: #2563eb; text-decoration: none;">github.com/HimanshuPandey216</a></span>
+      </div>
+      <div class="item-sub">
+        <span>Tech: Python, FastAPI, Vector Search, Agent Policy Engine, Audit Logging, Security</span>
+      </div>
+      <ul>
+        <li>Architected a governed context mediation layer between autonomous LLM agents and sensitive enterprise data stores.</li>
+        <li>Implemented structured and unstructured context retrieval, real-time privacy filtering, automatic PII redaction, and source provenance tracking.</li>
+        <li>Enforced granular agent action policies preventing unauthorized tool invocation, along with audit logging and prompt-injection defense.</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 0.75rem;">
+        <span>Inventory Demand Forecasting & Replenishment Optimization</span>
+        <span>Python, Scikit-learn, Pandas, Excel</span>
+      </div>
+      <ul>
+        <li>Developed time-series demand forecasting models on historical retail sales data capturing trend and seasonality to predict SKU requirements.</li>
+        <li>Applied inventory planning models (safety stock, statistical reorder points, ABC classification) to flag stockout risk and recommend replenishment quantities.</li>
+      </ul>
+
+      <div class="item-header" style="margin-top: 0.75rem;">
+        <span>Supply Chain Analytics & Logistics Dashboard</span>
+        <span>SQL, Excel, Python, Data Visualization</span>
+      </div>
+      <ul>
+        <li>Designed an analytics dashboard monitoring inventory levels, order fulfillment, transportation costs, and freight delivery performance.</li>
+        <li>Tracked and modeled core operational KPIs: On-Time Delivery (OTD), Inventory Turnover, and Order Fulfillment Rate.</li>
       </ul>
     </section>
 
     <section>
-      <h2 class="section-title">Skills</h2>
+      <h2 class="section-title">Technical Skills</h2>
       <div class="skills-row">
-        <strong>GenAI & Agentic AI:</strong> LangGraph, LangChain, RAG, Qdrant, Gemini Embeddings, NeMo Guardrails, RAGAS, Portkey, LangSmith, MCP, LLM Fine-Tuning (LoRA/QLoRA), PEFT, Hugging Face Transformers, TRL, Prompt Engineering
+        <strong>GenAI & Agentic AI:</strong> LangChain, LangGraph, RAG, Qdrant, Gemini Embeddings, NeMo Guardrails, RAGAS, Portkey, LangSmith, MCP, Prompt Engineering, Fine-Tuning, LoRA, QLoRA, PEFT, Hugging Face Transformers, TRL.
       </div>
       <div class="skills-row">
-        <strong>MLOps:</strong> MLflow, DVC, DagsHub, Grafana, Prometheus, Model Registry, Experiment Tracking, Data Versioning, Pipeline Automation
+        <strong>Machine Learning & Data Science:</strong> Scikit-learn, XGBoost, PyTorch, TensorFlow, Pandas, NumPy, EDA, Feature Engineering, Model Evaluation, Data Visualization, Random Forest, Time Series Forecasting.
       </div>
       <div class="skills-row">
-        <strong>Backend:</strong> Python, Flask, FastAPI, REST APIs, SQLAlchemy, Celery, Redis, JWT Authentication
+        <strong>Programming & Backend:</strong> Python, SQL, JavaScript (ES6+), FastAPI, Flask, REST APIs, SQLAlchemy, Celery, Redis, JWT.
       </div>
       <div class="skills-row">
-        <strong>Databases:</strong> PostgreSQL, SQLite, MongoDB, Query Optimization, Schema Design, ETL Pipelines
+        <strong>Databases & Data Engineering:</strong> PostgreSQL, MySQL, MongoDB Atlas, SQLite, Query Optimization, Schema Design, ETL Pipelines, DVC.
       </div>
       <div class="skills-row">
-        <strong>DevOps & Cloud:</strong> Docker, CI/CD, AWS (EC2, S3, IAM), Linux, Git
+        <strong>MLOps, DevOps & Cloud:</strong> Docker, AWS (EC2, S3, IAM, ECR), MLflow, DVC, DagsHub, CI/CD, GitHub Actions, Grafana, Prometheus, Linux Administration.
       </div>
       <div class="skills-row">
-        <strong>ML & Data:</strong> Scikit-learn, XGBoost, PyTorch, TensorFlow, Pandas, NumPy, EDA, Data Visualization
+        <strong>Supply Chain & Analytics:</strong> Inventory Management, Demand Forecasting, Logistics Analytics, Procurement Fundamentals, Microsoft Excel (Pivot Tables, Dashboards).
       </div>
       <div class="skills-row">
-        <strong>Frontend:</strong> React, Vue.js, JavaScript, HTML/CSS
+        <strong>Frontend:</strong> React, Vue.js, HTML5, CSS3, Canvas API.
       </div>
     </section>
 
     <section>
       <h2 class="section-title">Achievements & Certifications</h2>
       <ul>
-        <li><strong>NPTEL Star Performer</strong> — Invited by IIT Roorkee for consistent excellence across NPTEL certifications</li>
-        <li><strong>NPTEL Elite Topper, Data Mining</strong> (Nationwide Top Rank); Silver Elite in Cloud Computing & Data and Decision Making</li>
-        <li><strong>Generative AI</strong> — Udemy</li>
+        <li><strong>NPTEL Star Performer</strong> — Invited by IIT Roorkee for consistent nationwide excellence across NPTEL certifications</li>
+        <li><strong>NPTEL Elite Topper — Data Mining</strong> (Nationwide Top Rank); Silver Elite in Cloud Computing & Data and Decision Making</li>
+        <li><strong>Top 5% — Data Analysis and Decision Making</strong> (NPTEL, Silver Elite)</li>
+        <li><strong>Silver Elite — Cloud Computing</strong> (NPTEL)</li>
+        <li><strong>Business Analytics with Excel</strong> — Simplilearn</li>
+        <li><strong>SQL Certification</strong> — HackerRank</li>
+        <li><strong>Analyzing and Visualizing Data with Microsoft Excel</strong> — Skill Course</li>
         <li><strong>Claude Code 101</strong> — Anthropic</li>
+        <li><strong>Generative AI</strong> — Udemy</li>
         <li><strong>MLOps Bootcamp: Mastering AI Operations</strong> — Udemy</li>
         <li><strong>AWS Cloud Practitioner Essentials</strong> — GeeksforGeeks</li>
       </ul>

@@ -1,17 +1,17 @@
 <!DOCTYPE html>
-<html lang="en" data-theme="dark">
+<html lang="en">
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Himanshu Pandey | Founder @ Decode AI | Data Scientist & MLOps Engineer</title>
-  <meta name="description" content="Portfolio & Resume of Himanshu Pandey - Founder of Decode AI, Data Scientist and MLOps Engineer specializing in GenAI, Agentic RAG multi-agent pipelines, LLM fine-tuning, and scalable cloud ML pipelines at IIT Madras.">
-  <meta name="keywords" content="Himanshu Pandey, Decode AI, IIT Madras, MLOps Engineer, Data Scientist, Resume, GenAI, Agentic RAG, LangGraph, LangChain, Python, AWS, Docker, MLflow">
+  <title>Himanshu Pandey — AI Engineer | Machine Learning & MLOps</title>
+  <meta name="description" content="Portfolio of Himanshu Pandey — AI Engineer & Data Science undergraduate at IIT Madras, Founder of Decode AI. Specializing in Agentic AI, LLM systems, MLOps, and scalable data engineering.">
+  <meta name="keywords" content="Himanshu Pandey, AI Engineer, MLOps Engineer, IIT Madras, Agentic AI, LangGraph, LangChain, RAG, Machine Learning, Data Science, Decode AI">
   <meta name="author" content="Himanshu Pandey">
 
-  <!-- Google Fonts -->
+  <!-- Google Fonts: Plus Jakarta Sans & JetBrains Mono -->
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800;900&display=swap" rel="stylesheet">
 
   <!-- Font Awesome Icons -->
   <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css" crossorigin="anonymous">
@@ -21,15 +21,15 @@
 </head>
 <body>
 
-  <!-- Interactive Background Canvas -->
+  <!-- Subtle Editorial Particle Background -->
   <canvas id="particle-canvas"></canvas>
 
-  <!-- Sticky Glassmorphism Header -->
+  <!-- Minimalist Sticky Navigation Bar -->
   <header class="navbar" id="navbar">
     <div class="container nav-container">
       <a href="#hero" class="nav-logo">
-        <div class="logo-badge">HP</div>
-        <span>Himanshu<span class="gradient-text">.ai</span></span>
+        <span class="logo-badge">HP</span>
+        <span>HIMANSHU PANDEY</span>
       </a>
 
       <nav>
@@ -38,26 +38,24 @@
           <li><a href="#skills" class="nav-link">Skills</a></li>
           <li><a href="#projects" class="nav-link">Projects</a></li>
           <li><a href="#experience" class="nav-link">Experience</a></li>
+          <li><a href="#education" class="nav-link">Education</a></li>
           <li><a href="#certifications" class="nav-link">Honors</a></li>
-          <li><a href="#resume-section" class="nav-link">Resume</a></li>
+          <li><a href="#resume" class="nav-link">Resume</a></li>
           <li><a href="#contact" class="nav-link">Contact</a></li>
         </ul>
       </nav>
 
       <div class="nav-actions">
-        <button class="theme-toggle-btn" id="theme-toggle" aria-label="Toggle dark/light theme">
-          <i class="fa-solid fa-sun"></i>
-        </button>
-        <a href="https://decodeai-alpha.vercel.app/" target="_blank" class="btn btn-secondary" style="padding: 0.55rem 1.1rem; font-size: 0.85rem; border-color: var(--accent-purple); color: #c084fc;">
+        <a href="https://decodeai-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-lime" style="padding: 0.5rem 0.95rem; font-size: 0.82rem;">
           <i class="fa-solid fa-brain"></i> Decode AI
         </a>
-        <a href="assets/resume.html" target="_blank" class="btn btn-secondary" style="padding: 0.55rem 1.1rem; font-size: 0.85rem; border-color: var(--accent-cyan); color: var(--accent-cyan);">
+        <a href="assets/resume.html" target="_blank" class="btn btn-secondary" style="padding: 0.5rem 0.95rem; font-size: 0.82rem;">
           <i class="fa-solid fa-file-pdf"></i> Resume
         </a>
-        <a href="#contact" class="btn btn-primary" style="padding: 0.6rem 1.2rem; font-size: 0.85rem;">
-          <i class="fa-solid fa-paper-plane"></i> Get in Touch
+        <a href="#contact" class="btn btn-primary" style="padding: 0.5rem 1.1rem; font-size: 0.82rem;">
+          Let's Talk
         </a>
-        <div class="hamburger" id="hamburger" aria-label="Open mobile menu">
+        <div class="hamburger" id="hamburger" aria-label="Toggle Navigation">
           <span></span>
           <span></span>
           <span></span>
@@ -67,288 +65,323 @@
   </header>
 
   <main>
-    <!-- HERO SECTION -->
+    <!-- 1. HERO SECTION -->
     <section class="hero-section" id="hero">
       <div class="container">
         <div class="hero-grid">
           <div class="hero-content">
             <div class="hero-status-pill">
-              <span class="status-dot"></span> Founder @ Decode AI | Open for Roles
-            </div>
-            
-            <h1 class="hero-name">
-              Hi, I'm <span class="gradient-text" id="hero-name">Himanshu Pandey</span>
-            </h1>
-
-            <div class="hero-typing-container">
-              <span>I specialize in&nbsp;</span>
-              <span id="typed-text" class="typed-text"></span>
-              <span class="typed-cursor"></span>
+              <span class="status-dot"></span> AVAILABLE FOR AI & MLOPS ROLES
             </div>
 
-            <p class="hero-bio" id="hero-bio">
-              Data Scientist, MLOps Engineer, and Founder of <strong><a href="https://decodeai-alpha.vercel.app/" target="_blank" style="color: var(--accent-cyan); text-decoration: underline;">Decode AI</a></strong> — an open community knowledge platform for Artificial Intelligence, Machine Learning, and Data Science. Pursuing Data Science at <strong>IIT Madras</strong>.
+            <h1 class="hero-name">HIMANSHU PANDEY</h1>
+
+            <h2 class="hero-headline">
+              Building intelligent systems that solve real-world problems.
+            </h2>
+
+            <div class="hero-subheadline">
+              AI Engineer • Agentic AI • Machine Learning • Data & MLOps
+            </div>
+
+            <p class="hero-intro">
+              AI Engineer and Data Science undergraduate at <strong>IIT Madras</strong>, and Founder of <strong>Decode AI</strong>. Focused on building production-ready Agentic AI systems, enterprise RAG pipelines with safety guardrails, reliable MLOps architectures, and high-throughput data processing engines.
             </p>
 
             <div class="hero-actions">
-              <a href="https://decodeai-alpha.vercel.app/" target="_blank" class="btn btn-primary" style="box-shadow: 0 4px 20px rgba(121, 40, 202, 0.4); background: var(--gradient-accent); color: #fff;">
-                <i class="fa-solid fa-rocket"></i> Visit Decode AI
+              <a href="#projects" class="btn btn-primary">
+                <i class="fa-solid fa-code"></i> View Projects
               </a>
               <a href="assets/resume.html" target="_blank" class="btn btn-secondary">
-                <i class="fa-solid fa-file-pdf"></i> View Official Resume
+                <i class="fa-solid fa-file-pdf"></i> View Resume
               </a>
-              <a href="#projects" class="btn btn-secondary">
-                <i class="fa-solid fa-code"></i> Projects
-              </a>
-              <a href="https://github.com/HimanshuPandey216" target="_blank" rel="noopener noreferrer" class="btn btn-secondary">
-                <i class="fa-brands fa-github"></i> GitHub
+              <a href="https://decodeai-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" class="btn btn-outline-lime">
+                <i class="fa-solid fa-arrow-up-right-from-square"></i> Decode AI ↗
               </a>
             </div>
 
-            <div class="social-links">
-              <a href="https://decodeai-alpha.vercel.app/" target="_blank" class="social-icon-btn" title="Decode AI Platform">
-                <i class="fa-solid fa-brain"></i>
-              </a>
-              <a href="assets/resume.html" target="_blank" class="social-icon-btn" title="View Resume">
-                <i class="fa-solid fa-file-lines"></i>
-              </a>
-              <a href="mailto:himanshupandey2166@gmail.com" class="social-icon-btn" title="Send Email">
-                <i class="fa-solid fa-envelope"></i>
-              </a>
-              <a href="tel:+917652023417" class="social-icon-btn" title="Call Phone">
-                <i class="fa-solid fa-phone"></i>
-              </a>
-              <a href="https://github.com/HimanshuPandey216" target="_blank" class="social-icon-btn" title="GitHub">
+            <div class="hero-socials">
+              <a href="https://github.com/HimanshuPandey216" target="_blank" rel="noopener noreferrer" class="social-link-item" title="GitHub Profile">
                 <i class="fa-brands fa-github"></i>
               </a>
-              <a href="https://linkedin.com/in/himanshu-pandey12" target="_blank" class="social-icon-btn" title="LinkedIn">
+              <a href="https://linkedin.com/in/himanshu-pandey12" target="_blank" rel="noopener noreferrer" class="social-link-item" title="LinkedIn Profile">
                 <i class="fa-brands fa-linkedin"></i>
+              </a>
+              <a href="mailto:himanshupandey2166@gmail.com" class="social-link-item" title="Send Email">
+                <i class="fa-solid fa-envelope"></i>
+              </a>
+              <a href="tel:+917652023417" class="social-link-item" title="Call Phone">
+                <i class="fa-solid fa-phone"></i>
               </a>
             </div>
           </div>
 
-          <!-- Hero Avatar Visual Card -->
-          <div class="hero-avatar-wrapper">
-            <div class="avatar-glow"></div>
-            <div class="glass-card avatar-card">
-              <img src="assets/images/avatar.jpg" alt="Himanshu Pandey Developer Avatar" class="avatar-img">
-              <div class="avatar-floating-badge">
-                <div class="badge-icon">
-                  <i class="fa-solid fa-graduation-cap"></i>
+          <!-- Hero Visual Editorial Card -->
+          <div class="hero-visual">
+            <div class="avatar-editorial-card">
+              <img src="assets/images/avatar.jpg" alt="Himanshu Pandey — AI Engineer" class="avatar-editorial-img">
+              <div class="avatar-meta">
+                <div>
+                  <div class="meta-title">IIT Madras</div>
+                  <div class="meta-sub">BS Data Science '26–'27</div>
                 </div>
-                <div class="badge-text">
-                  <strong>IIT Madras</strong>
-                  <span>BS Data Science '26</span>
+                <div style="text-align: right;">
+                  <div class="meta-title">Decode AI</div>
+                  <div class="meta-sub">Founder & Architect</div>
                 </div>
               </div>
             </div>
           </div>
         </div>
 
-        <!-- Key Metrics Bar -->
-        <div class="stats-grid" id="stats-grid">
-          <!-- Rendered dynamically by script.js -->
+        <!-- Metrics Strip -->
+        <div class="metrics-strip" id="metrics-strip">
+          <!-- Populated dynamically by script.js -->
         </div>
       </div>
     </section>
 
-    <!-- ABOUT ME SECTION -->
+    <!-- 2. ABOUT ME SECTION -->
     <section id="about">
       <div class="container">
-        <span class="section-tag"><i class="fa-solid fa-user"></i> About Me</span>
-        <h2 class="section-title">Architecting Production-Grade <span class="gradient-text">AI Systems</span></h2>
-        <p class="section-subtitle">Combining theoretical rigor from IIT Madras with real-world engineering at Shodhshala & Decode AI.</p>
+        <span class="section-tag">01 // PROFILE</span>
+        <h2 class="section-title">
+          Engineering practical solutions from foundational theory to <span class="accent-text">production scale</span>.
+        </h2>
+        <p class="section-subtitle">
+          Combining theoretical rigor from IIT Madras with real-world engineering at Shodhshala and open-source platform leadership at Decode AI.
+        </p>
 
-        <div style="display: grid; grid-template-columns: repeat(auto-fit, minmax(300px, 1fr)); gap: 1.5rem;">
-          <div class="glass-card" style="padding: 2rem;">
-            <div style="font-size: 2.2rem; color: var(--accent-magenta); margin-bottom: 1rem;">
-              <i class="fa-solid fa-brain"></i>
-            </div>
-            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem;">Founder @ Decode AI</h3>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">
-              Created <a href="https://decodeai-alpha.vercel.app/" target="_blank" style="color: var(--accent-cyan); font-weight: 700;">Decode AI</a> ("Learn AI. Build Future."), a community knowledge hub featuring 50+ curated resources, 16 core AI domains, and 2026 AI Engineer roadmaps.
+        <div class="about-grid">
+          <div class="editorial-card about-card">
+            <div class="about-card-index">01 / ACADEMICS</div>
+            <h3 class="about-card-title">IIT Madras Foundation</h3>
+            <p class="about-card-desc">
+              Pursuing a BS in Data Science and Applications with a Diploma in Programming & App Development. Rigorous coursework in Data Structures, Database Management Systems (DBMS), Algorithms, and Statistics.
             </p>
           </div>
 
-          <div class="glass-card" style="padding: 2rem;">
-            <div style="font-size: 2.2rem; color: var(--accent-cyan); margin-bottom: 1rem;">
-              <i class="fa-solid fa-project-diagram"></i>
-            </div>
-            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem;">GenAI & Agentic Systems</h3>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">
-              Expertise in multi-agent routing graphs with <strong>LangGraph</strong>, safety guardrails via <strong>NeMo</strong>, vector search on Qdrant, Model Context Protocol (MCP), and LoRA/QLoRA fine-tuning.
+          <div class="editorial-card about-card">
+            <div class="about-card-index">02 / AGENTIC AI</div>
+            <h3 class="about-card-title">Agentic AI & LLMs</h3>
+            <p class="about-card-desc">
+              Designing multi-agent routing graphs with LangGraph, cyclic reasoning pipelines, safety guardrails (NeMo), Model Context Protocol (MCP), vector retrieval on Qdrant, and LoRA/QLoRA fine-tuning.
             </p>
           </div>
 
-          <div class="glass-card" style="padding: 2rem;">
-            <div style="font-size: 2.2rem; color: var(--accent-blue); margin-bottom: 1rem;">
-              <i class="fa-solid fa-server"></i>
-            </div>
-            <h3 style="font-size: 1.25rem; font-weight: 800; margin-bottom: 0.75rem;">MLOps & Cloud Infrastructure</h3>
-            <p style="color: var(--text-secondary); font-size: 0.95rem;">
-              End-to-end experiment tracking with <strong>MLflow & DVC</strong>, containerization with Docker, Grafana/Prometheus data drift detection, and AWS EC2/S3/ECR deployments.
+          <div class="editorial-card about-card">
+            <div class="about-card-index">03 / PRODUCTION MLOPS</div>
+            <h3 class="about-card-title">Data Systems & MLOps</h3>
+            <p class="about-card-desc">
+              Managing 1M+ financial data rows (cutting query latency by ~30%), building Python ETL pipelines (~40% time reduction), automated CI/CD with GitHub Actions, Docker, and Grafana/Prometheus drift detection.
+            </p>
+          </div>
+
+          <div class="editorial-card about-card">
+            <div class="about-card-index">04 / OPEN SOURCE</div>
+            <h3 class="about-card-title">Founder of Decode AI</h3>
+            <p class="about-card-desc">
+              Created <a href="https://decodeai-alpha.vercel.app/" target="_blank" style="color: var(--accent-lime); text-decoration: underline;">Decode AI</a> ("Learn AI. Build Future."), a community knowledge platform featuring 50+ curated resources, 16 core domains, and comprehensive 23-phase AI Engineer roadmaps.
             </p>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- RECRUITER RESUME SECTION -->
-    <section id="resume-section">
+    <!-- 3. TECHNICAL SKILLS SECTION -->
+    <section id="skills">
       <div class="container">
-        <div class="glass-card" style="padding: 3rem 2rem; text-align: center; position: relative; overflow: hidden;">
-          <div style="position: absolute; top: -50px; right: -50px; width: 200px; height: 200px; background: var(--gradient-primary); border-radius: 50%; opacity: 0.15; filter: blur(40px);"></div>
+        <span class="section-tag">02 // CAPABILITIES</span>
+        <h2 class="section-title">
+          Technical Skills & <span class="accent-text">Domain Matrix</span>
+        </h2>
+        <p class="section-subtitle">
+          Categorized engineering toolchains, libraries, and frameworks. Search or filter across domains.
+        </p>
 
-          <span class="section-tag"><i class="fa-solid fa-id-card"></i> Recruiter Hub</span>
-          <h2 class="section-title" style="margin-top: 0.5rem;">View Official <span class="gradient-text">Resume</span></h2>
+        <div class="skills-controls">
+          <div class="skills-filter-tabs" id="skills-filter-tabs">
+            <!-- Tabs rendered dynamically -->
+          </div>
+          <div class="skills-search-wrapper">
+            <i class="fa-solid fa-magnifying-glass skills-search-icon"></i>
+            <input type="text" id="skills-search" class="skills-search-input" placeholder="Search skill (e.g. LangGraph, Docker, SQL)...">
+          </div>
+        </div>
+
+        <div class="skills-domains-grid" id="skills-domains-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 4. FEATURED PROJECTS SECTION -->
+    <section id="projects">
+      <div class="container">
+        <span class="section-tag">03 // WORK & SYSTEMS</span>
+        <h2 class="section-title">
+          Featured Engineering <span class="accent-text">Projects</span>
+        </h2>
+        <p class="section-subtitle">
+          Real-world AI architectures, multi-agent systems, security platforms, and analytical engines.
+        </p>
+
+        <div class="projects-filter-bar" id="projects-filter-bar">
+          <!-- Populated dynamically by script.js -->
+        </div>
+
+        <div class="projects-grid" id="projects-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 5. WORK EXPERIENCE SECTION -->
+    <section id="experience">
+      <div class="container">
+        <span class="section-tag">04 // TRACK RECORD</span>
+        <h2 class="section-title">
+          Work Experience & <span class="accent-text">Impact</span>
+        </h2>
+        <p class="section-subtitle">
+          Hands-on engineering across high-frequency financial data processing, production MLOps, and platform architecture.
+        </p>
+
+        <div class="experience-list" id="experience-list">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 6. EDUCATION SECTION -->
+    <section id="education">
+      <div class="container">
+        <span class="section-tag">05 // ACADEMICS</span>
+        <h2 class="section-title">
+          Education & <span class="accent-text">Training</span>
+        </h2>
+        <p class="section-subtitle">
+          Academic foundation from IIT Madras and specialized industry associate programs.
+        </p>
+
+        <div class="education-grid" id="education-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 7. CERTIFICATIONS & ACHIEVEMENTS SECTION -->
+    <section id="certifications">
+      <div class="container">
+        <span class="section-tag">06 // RECOGNITION</span>
+        <h2 class="section-title">
+          Certifications & <span class="accent-text">Honors</span>
+        </h2>
+        <p class="section-subtitle">
+          Recognized for academic excellence, nationwide exam performance, and verified technical skills.
+        </p>
+
+        <div class="certs-grid" id="certs-grid">
+          <!-- Populated dynamically by script.js -->
+        </div>
+      </div>
+    </section>
+
+    <!-- 8. RECRUITER RESUME HUB -->
+    <section id="resume">
+      <div class="container">
+        <div class="editorial-card resume-hub-card">
+          <span class="section-tag">07 // RECRUITER HUB</span>
+          <h2 class="section-title" style="margin-top: 0.5rem; margin-bottom: 0.75rem;">
+            Official Formatted <span class="accent-text">Resume</span>
+          </h2>
           <p class="section-subtitle" style="margin: 0 auto 2rem auto;">
-            Looking for a Data Scientist, MLOps Engineer, or GenAI Specialist? You can view my complete formatted resume directly in your browser or save it as a PDF.
+            Review my complete, print-ready resume directly in the browser, explore the quick in-page preview modal, or download the formatted PDF.
           </p>
 
-          <div style="display: flex; justify-content: center; gap: 1.25rem; flex-wrap: wrap;">
+          <div class="resume-hub-actions">
             <a href="assets/resume.html" target="_blank" class="btn btn-primary">
               <i class="fa-solid fa-arrow-up-right-from-square"></i> Open Resume in New Tab
             </a>
             <button id="open-resume-modal-btn" class="btn btn-secondary">
               <i class="fa-solid fa-eye"></i> Quick Preview Modal
             </button>
-            <a href="assets/resume.html" onclick="setTimeout(() => window.print(), 500)" target="_blank" class="btn btn-secondary">
-              <i class="fa-solid fa-download"></i> Download / Print PDF
+            <a href="assets/resume.html" onclick="setTimeout(() => window.print(), 400)" target="_blank" class="btn btn-outline-lime">
+              <i class="fa-solid fa-print"></i> Print / Save as PDF
             </a>
           </div>
         </div>
       </div>
     </section>
 
-    <!-- TECHNICAL SKILLS SECTION -->
-    <section id="skills">
-      <div class="container">
-        <span class="section-tag"><i class="fa-solid fa-code"></i> Technical Matrix</span>
-        <h2 class="section-title">Skills & <span class="gradient-text">Technologies</span></h2>
-        <p class="section-subtitle">Filter by domain or search for specific tools, libraries, and frameworks.</p>
-
-        <div class="skills-filter-container">
-          <div class="skills-tabs" id="skills-tabs">
-            <!-- Tabs rendered dynamically -->
-          </div>
-          <div class="skills-search-wrapper">
-            <i class="fa-solid fa-magnifying-glass skills-search-icon"></i>
-            <input type="text" id="skills-search" class="skills-search-input" placeholder="Search skill (e.g. LangGraph, AWS, Docker)...">
-          </div>
-        </div>
-
-        <div class="skills-grid" id="skills-grid">
-          <!-- Skills rendered dynamically -->
-        </div>
-      </div>
-    </section>
-
-    <!-- FEATURED PROJECTS SECTION -->
-    <section id="projects">
-      <div class="container">
-        <span class="section-tag"><i class="fa-solid fa-cubes"></i> Portfolio Highlights</span>
-        <h2 class="section-title">Featured <span class="gradient-text">Projects</span></h2>
-        <p class="section-subtitle">Real-world AI platforms, agentic LLM pipelines, and automated cloud workflows.</p>
-
-        <div class="projects-grid" id="projects-grid">
-          <!-- Projects rendered dynamically -->
-        </div>
-      </div>
-    </section>
-
-    <!-- WORK EXPERIENCE & EDUCATION SECTION -->
-    <section id="experience">
-      <div class="container">
-        <span class="section-tag"><i class="fa-solid fa-briefcase"></i> Experience & Education</span>
-        <h2 class="section-title">Career <span class="gradient-text">Timeline</span></h2>
-        <p class="section-subtitle">My professional journey and academic foundation at IIT Madras.</p>
-
-        <div class="timeline-grid">
-          <div>
-            <h3 class="timeline-column-title"><i class="fa-solid fa-briefcase"></i> Work Experience</h3>
-            <div class="timeline-items" id="experience-timeline">
-              <!-- Experience timeline rendered dynamically -->
-            </div>
-          </div>
-
-          <div>
-            <h3 class="timeline-column-title"><i class="fa-solid fa-graduation-cap"></i> Academic Foundation</h3>
-            <div class="timeline-items" id="education-timeline">
-              <!-- Education timeline rendered dynamically -->
-            </div>
-          </div>
-        </div>
-      </div>
-    </div>
-    </section>
-
-    <!-- CERTIFICATIONS & HONORS SECTION -->
-    <section id="certifications">
-      <div class="container">
-        <span class="section-tag"><i class="fa-solid fa-award"></i> Recognition & Credentials</span>
-        <h2 class="section-title">Certifications & <span class="gradient-text">Honors</span></h2>
-        <p class="section-subtitle">Recognized for academic excellence and specialized technical certifications.</p>
-
-        <div class="certs-grid" id="certs-grid">
-          <!-- Certifications rendered dynamically -->
-        </div>
-      </div>
-    </section>
-
-    <!-- CONTACT SECTION -->
+    <!-- 9. CONTACT SECTION -->
     <section id="contact">
       <div class="container">
-        <span class="section-tag"><i class="fa-solid fa-comments"></i> Get In Touch</span>
-        <h2 class="section-title">Let's Build <span class="gradient-text">Together</span></h2>
-        <p class="section-subtitle">Interested in collaborating on AI research, MLOps engineering, or GenAI projects? Send a message!</p>
+        <span class="section-tag">08 // GET IN TOUCH</span>
+        <h2 class="section-title">
+          Let's build something <span class="accent-text">intelligent</span>.
+        </h2>
+        <p class="section-subtitle">
+          Interested in discussing an AI engineering role, research collaboration, or high-impact MLOps initiative? Let's connect.
+        </p>
 
         <div class="contact-grid">
-          <div class="contact-info-cards">
-            <div class="glass-card contact-info-card">
-              <div class="contact-info-icon">
+          <div class="contact-info-list">
+            <div class="editorial-card contact-info-item">
+              <div class="contact-icon-box">
                 <i class="fa-solid fa-envelope"></i>
               </div>
               <div class="contact-info-text" style="flex-grow: 1;">
                 <label>Direct Email</label>
-                <p>himanshupandey2166@gmail.com</p>
+                <a href="mailto:himanshupandey2166@gmail.com">himanshupandey2166@gmail.com</a>
               </div>
-              <button class="btn btn-secondary" id="copy-email-btn" style="padding: 0.5rem 0.85rem; font-size: 0.8rem;" title="Copy email">
+              <button class="btn btn-secondary" id="copy-email-btn" style="padding: 0.45rem 0.85rem; font-size: 0.8rem;" title="Copy email address">
                 <i class="fa-regular fa-copy"></i> Copy
               </button>
             </div>
 
-            <div class="glass-card contact-info-card">
-              <div class="contact-info-icon">
+            <div class="editorial-card contact-info-item">
+              <div class="contact-icon-box">
                 <i class="fa-solid fa-phone"></i>
               </div>
               <div class="contact-info-text">
                 <label>Phone / WhatsApp</label>
-                <p>+91-7652023417</p>
+                <a href="tel:+917652023417">+91-7652023417</a>
               </div>
             </div>
 
-            <div class="glass-card contact-info-card">
-              <div class="contact-info-icon">
-                <i class="fa-solid fa-location-dot"></i>
-              </div>
-              <div class="contact-info-text">
-                <label>Current Status</label>
-                <p>IIT Madras / Remote & On-site</p>
-              </div>
-            </div>
-
-            <div class="glass-card contact-info-card">
-              <div class="contact-info-icon">
+            <div class="editorial-card contact-info-item">
+              <div class="contact-icon-box">
                 <i class="fa-brands fa-github"></i>
               </div>
               <div class="contact-info-text">
                 <label>GitHub</label>
-                <p><a href="https://github.com/HimanshuPandey216" target="_blank" style="color: var(--accent-cyan);">github.com/HimanshuPandey216</a></p>
+                <a href="https://github.com/HimanshuPandey216" target="_blank" rel="noopener noreferrer">github.com/HimanshuPandey216</a>
+              </div>
+            </div>
+
+            <div class="editorial-card contact-info-item">
+              <div class="contact-icon-box">
+                <i class="fa-brands fa-linkedin"></i>
+              </div>
+              <div class="contact-info-text">
+                <label>LinkedIn</label>
+                <a href="https://linkedin.com/in/himanshu-pandey12" target="_blank" rel="noopener noreferrer">linkedin.com/in/himanshu-pandey12</a>
+              </div>
+            </div>
+
+            <div class="editorial-card contact-info-item">
+              <div class="contact-icon-box">
+                <i class="fa-solid fa-brain"></i>
+              </div>
+              <div class="contact-info-text">
+                <label>Knowledge Platform</label>
+                <a href="https://decodeai-alpha.vercel.app/" target="_blank" rel="noopener noreferrer" style="color: var(--accent-lime);">decodeai-alpha.vercel.app ↗</a>
               </div>
             </div>
           </div>
 
-          <div class="glass-card contact-form-card">
+          <div class="editorial-card contact-form-box">
             <form id="contact-form">
               <div class="form-group">
                 <label for="form-name" class="form-label">Your Name</label>
@@ -361,8 +394,8 @@
               </div>
 
               <div class="form-group">
-                <label for="form-message" class="form-label">Project / Inquiry Message</label>
-                <textarea id="form-message" class="form-input" placeholder="Tell me about your AI project, MLOps needs, or opportunity..." required></textarea>
+                <label for="form-message" class="form-label">Project / Role Inquiry</label>
+                <textarea id="form-message" class="form-input" placeholder="Tell me about your AI engineering needs, team opportunities, or collaboration..." required></textarea>
               </div>
 
               <button type="submit" class="btn btn-primary" style="width: 100%; justify-content: center;">
@@ -375,21 +408,22 @@
     </section>
   </main>
 
+  <!-- FOOTER -->
   <footer class="footer">
     <div class="container footer-content">
-      <div class="footer-copyright">
-        © 2026 <strong>Himanshu Pandey</strong>. Founder of <a href="https://decodeai-alpha.vercel.app/" target="_blank" style="color: var(--accent-cyan);">Decode AI</a>.
+      <div class="footer-copy">
+        © 2026 <strong>Himanshu Pandey</strong>. AI Engineer & Founder of <a href="https://decodeai-alpha.vercel.app/" target="_blank" rel="noopener" style="color: var(--accent-lime);">Decode AI</a>. Built with precision.
       </div>
-      <a href="#hero" class="back-to-top" aria-label="Scroll back to top">
+      <a href="#hero" class="back-to-top" aria-label="Back to Top">
         <i class="fa-solid fa-arrow-up"></i>
       </a>
     </div>
   </footer>
 
-  <!-- Project Detail & Resume Modal Overlay -->
+  <!-- Modal Overlay for Projects & Resume Preview -->
   <div class="modal-overlay" id="project-modal">
-    <div class="glass-card modal-container">
-      <!-- Content populated dynamically by script.js -->
+    <div class="modal-container">
+      <!-- Populated dynamically -->
     </div>
   </div>
 
